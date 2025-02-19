@@ -10,6 +10,7 @@
 
 ```bash
 git clone https://github.com/danielmb/tiktok-downloader-cli.git
+cd tiktok-downloader-cli
 ```
 
 ### 2. Setup the project
