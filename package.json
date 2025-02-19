@@ -1,0 +1,48 @@
+{
+  "name": "tiktok-downloader",
+  "version": "1.0.0",
+  "main": "dist/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "tsc -w",
+    "setup": "npm install && npm run build && npm install -g ."
+  },
+  "bin": {
+    "tiktok-downloader": "dist/cli.js",
+    "tk-dl": "dist/cli.js",
+    "tiktok": "dist/cli.js"
+  },
+  "pkg": {
+    "targets": [
+      "node20-linux-x64",
+      "node20-macos-x64",
+      "node20-win-x64"
+    ],
+    "scripts": "dist/**/*.js",
+    "assets": [
+      "node_modules/puppeteer/.local-chromium/**/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.6",
+    "@types/got": "^9.6.12",
+    "@types/node": "^22.13.4",
+    "@types/yargs": "^17.0.33",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "got": "^14.4.6",
+    "ora": "^8.2.0",
+    "puppeteer": "^24.2.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "yargs": "^17.7.2"
+  }
+}
